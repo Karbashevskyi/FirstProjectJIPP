@@ -1,52 +1,80 @@
 package main;
 
+import java.util.ArrayList;
+
 public class Client {
 
-	public int id;
-	public String name;
-	public String last_name;
-	public String phone;
-	public String email;
-	public String passport_number;
+	private int id;
+	private String name;
+	private String last_name;
+	private String phone;
+	private String email;
+	private String passport_number;
 	
-	public Client (int id, String name, String last_name, String phone, String email, String passport_number) {
+	Client (int id, String name, String last_name, String phone, String email, String passport_number) {
 
-            this.id = id;
-            this.name = name;
-            this.last_name = last_name;
-            this.phone = phone;
-            this.email = email;
-            this.passport_number = passport_number;
+		this.id = id;
+		this.name = name;
+		this.last_name = last_name;
+		this.phone = phone;
+		this.email = email;
+		this.passport_number = passport_number;
 		
 	}
 	
-	public void setName(String name) {
-
-            this.name = name;
+	public void getAllBooking(ArrayList<Room> theRoomsList) {
+		
+		for (Room room: theRoomsList) {
+			
+			if (room.getClient().getId() == this.id) {
+				
+				System.out.println(room.getAllInformation());
+				
+			}
+			
+		}
 		
 	}
 	
-	public void setLastName(String last_name) {
-
-            this.last_name = last_name;
+	public int getId() {
+		
+		return this.id;
 		
 	}
 	
-	public void setPhone(String phone) {
-
-            this.phone = phone;
+	public String getName() {
+		
+		return this.name;
 		
 	}
 	
-	public void setEmail(String email) {
-
-            this.email = email;
+	public String getLastName() {
+		
+		return this.last_name;
 		
 	}
 	
-	public void setPassportNumber(String passport_number) {
-
-            this.passport_number = passport_number;
+	public String getPhone() {
+		
+		return this.phone;
+		
+	}
+	
+	public String getEmail() {
+		
+		return this.email;
+		
+	}
+	
+	public String getPassportNumber() {
+		
+		return this.passport_number;
+		
+	}
+	
+	public String getFullname() {
+		
+		return this.name + " " + this.last_name;
 		
 	}
 
