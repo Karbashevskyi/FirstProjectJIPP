@@ -7,14 +7,14 @@ public class Room {
 	
 	public Room (int id, StatusRoom status) {
 		
-		this.id = id;
-		this.status = status;
+            this.id = id;
+            this.status = status;
 		
 	}
 	
 	public void setStatus(StatusRoom status) {
-		
-		this.status = status;
+
+            this.status = status;
 		
 	}
 
