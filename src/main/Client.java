@@ -1,8 +1,6 @@
 package main;
 
-import java.util.ArrayList;
-
-public class Client {
+class Client {
 
 	private int id;
 	private String name;
@@ -21,61 +19,51 @@ public class Client {
 		this.passport_number = passport_number;
 		
 	}
-	
-	public void getAllBooking(ArrayList<Room> theRoomsList) {
-		
-		for (Room room: theRoomsList) {
-			
-			if (room.getClient().getId() == this.id) {
-				
-				System.out.println(room.getAllInformation());
-				
-			}
-			
-		}
-		
-	}
-	
-	public int getId() {
+
+	int getId() {
 		
 		return this.id;
 		
 	}
 	
 	public String getName() {
-		
+
 		return this.name;
-		
-	}
-	
-	public String getLastName() {
-		
-		return this.last_name;
-		
-	}
-	
-	public String getPhone() {
-		
-		return this.phone;
-		
-	}
-	
-	public String getEmail() {
-		
-		return this.email;
-		
-	}
-	
-	public String getPassportNumber() {
-		
-		return this.passport_number;
-		
-	}
-	
-	public String getFullname() {
-		
-		return this.name + " " + this.last_name;
-		
+
 	}
 
+	public String getLastName() {
+
+		return this.last_name;
+
+	}
+
+	public String getPhone() {
+
+		return this.phone;
+
+	}
+
+	public String getEmail() {
+
+		return this.email;
+
+	}
+
+	public String getPassportNumber() {
+
+		return this.passport_number;
+
+	}
+
+	String getFullname() {
+
+		return this.name + " " + this.last_name;
+
+	}
+
+	@Override
+	public String toString() {
+		return this.getFullname();
+	}
 }

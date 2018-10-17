@@ -1,6 +1,6 @@
 package main;
 
-public enum StatusRoom {
+enum StatusRoom {
     FREE,
     BUSY,
     NEED_CLEANING
