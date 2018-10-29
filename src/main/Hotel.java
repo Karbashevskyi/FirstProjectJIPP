@@ -71,7 +71,7 @@ class Hotel {
 				
 				if (room.getId() == id) {
 					
-					room.goBooking(booking_from, booking_to, client);
+					room.goReservation(client);
 					
 				}
 				

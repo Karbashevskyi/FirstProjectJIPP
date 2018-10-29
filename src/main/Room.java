@@ -5,8 +5,6 @@ class Room {
 	private int id;
 	private Client client;
 	private StatusRoom status = StatusRoom.FREE;
-    private String booking_from;
-    private String booking_to;
 
     Room (int id) {
 
@@ -15,20 +13,16 @@ class Room {
 	}
 
 	/**
-	 * @param booking_from
-	 * @param booking_to
-	 * @param client
+	 * @param client_reservation
 	 */
-    void goBooking(String booking_from, String booking_to, Client client) {
+    void goReservation(Client client_reservation) {
 
-		if (this.status != StatusRoom.NEED_CLEANING) {
+		if (status == StatusRoom.FREE) {
 
-			if (booking_from != null && booking_to != null && client != null) {
+			if (client != null) {
 
-				this.status = StatusRoom.BUSY;
-				this.booking_from = booking_from;
-				this.booking_to = booking_to;
-				this.client = client;
+				status = StatusRoom.BUSY;
+				client = client_reservation;
 
 			}
 
@@ -36,55 +30,49 @@ class Room {
 
 	}
 
-	public void goCleaning() {
+	void goFinishReservation() {
 
-		if (this.status != StatusRoom.NEED_CLEANING) {
+		if (status != StatusRoom.BUSY) {
 
-			this.status = StatusRoom.NEED_CLEANING;
+			status = StatusRoom.NEED_CLEANING;
 
 		}
-
 
 	}
 
-	public void goFree() {
+	void goCleaning() {
 
-		if (this.status != StatusRoom.FREE) {
+		if (status == StatusRoom.NEED_CLEANING) {
 
-			this.status = StatusRoom.FREE;
+			status = StatusRoom.FREE;
 
 		}
+
 
 	}
 
 	int getId() {
 
-		return this.id;
+		return id;
 
 	}
 
+	/**
+	 * @return
+	 */
 	Client getClient() {
 
-		return this.client;
+		return client;
 
 	}
 
 
+	/**
+	 * @return
+	 */
 	StatusRoom getStatus() {
 
-		return this.status;
-
-	}
-
-	public String getBookingFrom() {
-
-		return this.booking_from;
-
-	}
-
-	public String getBookingTo() {
-
-		return this.booking_to;
+		return status;
 
 	}
 
