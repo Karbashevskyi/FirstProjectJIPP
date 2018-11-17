@@ -3,7 +3,7 @@ package main;
 class Room {
 
 	private int id;
-	private Client client;
+	private int client_id;
 	private StatusRoom status = StatusRoom.FREE;
 
     Room(int id) {
@@ -13,16 +13,16 @@ class Room {
 	}
 
 	/**
-	 * @param client_reservation
+	 * @param client_id
 	 */
-    boolean goReservation(Client client_reservation) {
+    boolean goReservation(int client_id) {
 
 		if (status == StatusRoom.FREE) {
 
-			if (client_reservation != null) {
+			if (client_id != 0) {
 
 				status = StatusRoom.RESERVATION;
-				client = client_reservation;
+				this.client_id = client_id;
 				return true;
 
 			}
@@ -125,9 +125,9 @@ class Room {
 	/**
 	 * @return
 	 */
-	Client getClient() {
+	int getClientId() {
 
-		return client;
+		return client_id;
 
 	}
 
@@ -157,7 +157,7 @@ class Room {
 
 		if (status == StatusRoom.BUSY) {
 
-			string = "is busy. Client: " + client.toString();
+			string = "is busy. Client: " + client_id;
 
 		}
 
@@ -175,11 +175,11 @@ class Room {
 
 		if (status == StatusRoom.RESERVATION) {
 
-			string = "is reservation. Client: " + client.toString();
+			string = "is reservation. Client: " + client_id;
 
 		}
 
-        return "Room " + string;
+        return "Room " + id + " " + string;
 
 	}
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Cleaners extends Hotel {
 
-    private ArrayList<String> FullNames;
+    private ArrayList<String> theFullNamesList;
 
     Cleaners() {
 
@@ -12,13 +12,13 @@ public class Cleaners extends Hotel {
 
     public void addNewCleaner(String full_name) {
 
-        FullNames.add(full_name);
+        theFullNamesList.add(full_name);
 
     }
 
     public void getFullNames() {
 
-        for (String full_name: FullNames) {
+        for (String full_name: theFullNamesList) {
 
             System.out.println(full_name);
 
@@ -26,7 +26,7 @@ public class Cleaners extends Hotel {
 
     }
 
-    public void searchNeedCleaningRooms() {
+    public void showAllNeedCleaningRooms() {
 
         for (Room room : theRoomsList) {
 

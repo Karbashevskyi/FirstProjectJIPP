@@ -1,8 +1,14 @@
 package main;
-
-public class Receptionist extends Hotel {
+class Receptionist extends Hotel {
 
     private String full_name;
+    private int idSelectedRoom;
+
+    Receptionist (String full_name) {
+
+        this.full_name = full_name;
+
+    }
 
     public String getFullName() {
 
@@ -10,76 +16,123 @@ public class Receptionist extends Hotel {
 
     }
 
-    public void goCheckIn(int id) {
+    protected int getLastClientId() {
 
-        for (Room room : theRoomsList) {
-
-            if (room.getId() == id && (room.getStatus() == StatusRoom.FREE || room.getStatus() == StatusRoom.RESERVATION)) {
-
-                room.goCheckIn();
-                break;
-
-            }
-
-        }
+        return theClientsList.get(theRoomsList.size() - 1).getId();
 
     }
 
-    public void goCheckOut(int id) {
+    public void showAllClients() {
 
-        for (Room room : theRoomsList) {
+        System.out.println("---------------------");
+        System.out.println("- All CLIENTS");
+        System.out.println("---------------------");
 
-            if (room.getId() == id && room.getStatus() == StatusRoom.BUSY) {
+        if (checkTheClientsList()) {
 
-                room.goCheckOut();
-                break;
+            int countClients = 0;
+
+            for (Client client: theClientsList) {
+
+                countClients += 1;
+                System.out.println(client.getId() + " " +client.getFullName());
+
+            }
+
+            if (countClients != 0) {
+
+                System.out.println("We have: " + countClients + " clients.");
 
             }
 
         }
+
+        System.out.println();
 
     }
 
-    public void goReservation(int id, Client client_reservation) {
+    public boolean goCheckIn(int id) {
 
-        for (Room room : theRoomsList) {
+        System.out.println("Check in room id: " + id + ", is ");
 
-            if (room.getId() == id && room.getStatus() == StatusRoom.FREE) {
+        if (checkTheRoomsList()) {
 
-                room.goReservation(client_reservation);
-                break;
+            for (Room room : theRoomsList) {
+
+                if (room.getId() == id) {
+
+                    if (room.getStatus() == StatusRoom.FREE || room.getStatus() == StatusRoom.RESERVATION) {
+
+                        if (room.goCheckIn()) {
+
+                            System.out.print("check in");
+                            return true;
+
+                        }
+
+                    }
+
+                }
 
             }
 
         }
+
+        System.out.print("no check in.");
+        System.out.println();
+        return false;
 
     }
 
-    public void searchFreeRooms() {
+    public boolean goCheckOut(int id) {
 
-        for (Room room: theRoomsList) {
+        System.out.println("Check out room id: " + id + ", is ");
 
-            if (room.getStatus() == StatusRoom.FREE) {
+        if (checkTheRoomsList()) {
 
-                System.out.println(room);
+            for (Room room : theRoomsList) {
+
+                if (room.getId() == id) {
+
+                    if (room.getStatus() == StatusRoom.BUSY) {
+
+                        if (room.goCheckOut()) {
+
+                            System.out.print("check out");
+                            return true;
+
+                        }
+
+                    }
+
+                }
 
             }
 
         }
+
+        System.out.print("no check out.");
+        System.out.println();
+        return false;
 
     }
 
-    public void goCancelReservation(int id) {
+    public int getIdSelectedRoom() {
 
-        for (Room room: theRoomsList) {
+        return idSelectedRoom;
 
-            if (room.getId() == id && room.getStatus() == StatusRoom.RESERVATION) {
+    }
 
-                room.goCancelReservation();
+    public boolean setIdSelectedRoom(int room_id) {
 
-            }
+        if (room_id != 0) {
+
+            idSelectedRoom = room_id;
+            return true;
 
         }
+
+        return false;
 
     }
 

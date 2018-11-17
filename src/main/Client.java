@@ -1,6 +1,6 @@
 package main;
 
-class Client {
+class Client extends Hotel {
 
 	private int id;
 	private String full_name;
