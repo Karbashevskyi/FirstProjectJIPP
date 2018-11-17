@@ -6,7 +6,7 @@ class Room {
 	private Client client;
 	private StatusRoom status = StatusRoom.FREE;
 
-    Room (int id) {
+    Room(int id) {
 
 		this.id = id;
 
@@ -15,42 +15,107 @@ class Room {
 	/**
 	 * @param client_reservation
 	 */
-    void goReservation(Client client_reservation) {
+    boolean goReservation(Client client_reservation) {
 
 		if (status == StatusRoom.FREE) {
 
-			if (client != null) {
+			if (client_reservation != null) {
 
-				status = StatusRoom.BUSY;
+				status = StatusRoom.RESERVATION;
 				client = client_reservation;
+				return true;
 
 			}
 
+			return false;
+
 		}
+
+		return false;
 
 	}
 
-	void goFinishReservation() {
+	boolean goCancelReservation() {
 
-		if (status != StatusRoom.BUSY) {
+    	if (status == StatusRoom.RESERVATION) {
+
+    		status = StatusRoom.FREE;
+    		return true;
+
+		}
+
+		return false;
+
+	}
+
+	boolean goCheckOut() {
+
+		if (status == StatusRoom.BUSY) {
 
 			status = StatusRoom.NEED_CLEANING;
+			return true;
 
 		}
 
+		return false;
+
 	}
 
-	void goCleaning() {
+	boolean goCheckIn() {
+
+    	if (status == StatusRoom.FREE || status == StatusRoom.RESERVATION) {
+
+    		status = StatusRoom.BUSY;
+    		return true;
+
+		}
+
+		return false;
+
+	}
+
+	boolean goCleaning() {
 
 		if (status == StatusRoom.NEED_CLEANING) {
 
 			status = StatusRoom.FREE;
+			return true;
 
 		}
 
+		return false;
 
 	}
 
+	boolean goLocked() {
+
+		if (status != StatusRoom.BUSY) {
+
+			status = StatusRoom.LOCKED;
+			return true;
+
+		}
+
+		return false;
+
+	}
+
+	boolean goCancelLocked() {
+
+    	if (status == StatusRoom.LOCKED) {
+
+    		status = StatusRoom.FREE;
+    		return true;
+
+		}
+
+		return false;
+
+	}
+
+	/**
+	 * @return
+	 */
 	int getId() {
 
 		return id;
@@ -82,27 +147,39 @@ class Room {
 	@Override
 	public String toString() {
 
-        String status = "";
+        String string = "";
 
-		if (this.status == StatusRoom.FREE) {
+		if (status == StatusRoom.FREE) {
 
-			status = "is free";
-
-		}
-
-		if (this.status == StatusRoom.BUSY) {
-
-			status = "is busy. Client: " + this.client.toString();
+			string = "is free";
 
 		}
 
-		if (this.status == StatusRoom.NEED_CLEANING) {
+		if (status == StatusRoom.BUSY) {
 
-			status = "need cleaning";
+			string = "is busy. Client: " + client.toString();
 
 		}
 
-        return "Room " + status;
+		if (status == StatusRoom.NEED_CLEANING) {
+
+			string = "need cleaning";
+
+		}
+
+		if (status == StatusRoom.LOCKED) {
+
+			string = "is locked";
+
+		}
+
+		if (status == StatusRoom.RESERVATION) {
+
+			string = "is reservation. Client: " + client.toString();
+
+		}
+
+        return "Room " + string;
 
 	}
 }

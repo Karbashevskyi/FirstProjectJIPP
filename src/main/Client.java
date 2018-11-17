@@ -3,67 +3,47 @@ package main;
 class Client {
 
 	private int id;
-	private String name;
-	private String last_name;
+	private String full_name;
+	private String passport;
 	private String phone;
-	private String email;
-	private String passport_number;
 	
-	Client (int id, String name, String last_name, String phone, String email, String passport_number) {
+	Client(int id, String full_name, String passport, String phone) {
 
 		this.id = id;
-		this.name = name;
-		this.last_name = last_name;
+		this.full_name = full_name;
+		this.passport = passport;
 		this.phone = phone;
-		this.email = email;
-		this.passport_number = passport_number;
 		
 	}
 
-	int getId() {
+	public int getId() {
 		
-		return this.id;
+		return id;
 		
 	}
 	
-	public String getName() {
+	public String getFullName() {
 
-		return this.name;
+		return full_name;
 
 	}
 
-	public String getLastName() {
+	public String getPassport() {
 
-		return this.last_name;
+		return passport;
 
 	}
 
 	public String getPhone() {
 
-		return this.phone;
-
-	}
-
-	public String getEmail() {
-
-		return this.email;
-
-	}
-
-	public String getPassportNumber() {
-
-		return this.passport_number;
-
-	}
-
-	String getFullname() {
-
-		return this.name + " " + this.last_name;
+		return phone;
 
 	}
 
 	@Override
 	public String toString() {
-		return this.getFullname();
+
+		return getFullName();
+
 	}
 }
