@@ -7,15 +7,17 @@ public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
     private static Role role;
-
-    public static Receptionist receptionist = new Receptionist("Ivan karbashevskyi");
-    public static Director director = new Director("Aleksander Golovin");
-    public static Cleaners cleaners = new Cleaners();
-    public static Client client;
+    private static Hotel hotel = new Hotel();
+    private static Receptionist receptionist = new Receptionist("Ivan karbashevskyi");
+    private static Director director = new Director("Aleksander Golovin");
+    private static Cleaners cleaners = new Cleaners();
+    private static Client client;
 	
 	public static void main(String args[]) {
 
 //        authorisation("Hello, this is authorization form, please write value to input.");
+        hotel.initRooms();
+        hotel.initClients();
         selectRole();
 
 	}
@@ -130,31 +132,23 @@ public class Main {
                 case 1:
                     role = Role.CLIENT;
                     client = new Client(1, "Name Surname", "ER 000000", "+48 000 00 00 00");
-                    if (client.theRoomsList.isEmpty()) {
-                        client.initClients();
-                        client.initRooms();
-                    }
+                    client.theRoomsList = hotel.theRoomsList;
+                    client.theClientsList = hotel.theClientsList;
                     break;
                 case 2:
                     role = Role.CLEANERS;
-                    if (cleaners.theRoomsList.isEmpty()) {
-                        cleaners.initClients();
-                        cleaners.initRooms();
-                    }
+                    cleaners.theRoomsList = hotel.theRoomsList;
+                    cleaners.theClientsList = hotel.theClientsList;
                     break;
                 case 3:
                     role = Role.RECEPTIONIST;
-                    if (receptionist.theRoomsList.isEmpty()) {
-                        receptionist.initClients();
-                        receptionist.initRooms();
-                    }
+                    receptionist.theRoomsList = hotel.theRoomsList;
+                    receptionist.theClientsList = hotel.theClientsList;
                     break;
                 case 4:
                     role = Role.DIRECTOR;
-                    if (director.theRoomsList.isEmpty()) {
-                        director.initClients();
-                        director.initRooms();
-                    }
+                    director.theRoomsList = hotel.theRoomsList;
+                    director.theClientsList = hotel.theClientsList;
                     break;
                 default:
                     selectRole();
@@ -189,8 +183,7 @@ public class Main {
                 System.out.println("3. Cancel my reservation.");
                 break;
             case CLEANERS:
-                System.out.println("1. Show all need cleaning rooms.");
-                System.out.println("2. Cleaning.");
+                System.out.println("1. Show all need cleaning rooms and cleaning.");
                 break;
             case DIRECTOR:
                 System.out.println("My full name: " + director.getFullName());
@@ -243,13 +236,15 @@ public class Main {
 
 	    if (selectedFunction == 0) {
 
-//	        System.out.println("Exit.");
-            selectRole();
+	        if (saveChanges()) {
+
+	            selectRole();
+
+            }
 
         } else {
 
 	        br();
-            int room_id;
 
 	        switch (role) {
 
@@ -262,6 +257,7 @@ public class Main {
                             break;
                         case 2:
 //                            Reservation free room.
+                            int room_id;
                             client.showAllFreeRooms();
                             System.out.print("Please, write id room (0 - back to menu): ");
                             room_id = scanner.nextInt();
@@ -290,11 +286,8 @@ public class Main {
                 case CLEANERS:
                     switch (selectedFunction) {
                         case 1:
-//                            Show all need cleaning room
-                            cleaners.showAllNeedCleaningRooms();
-                            break;
-                        case 2:
 //                            Cleaning room
+                            int room_id;
                             cleaners.showAllNeedCleaningRooms();
                             System.out.print("Please, write id room (0 - back to menu): ");
                             room_id = scanner.nextInt();
@@ -308,10 +301,12 @@ public class Main {
                             menuForRole();
                             break;
                     }
+                    break;
                 case DIRECTOR:
                     switch (selectedFunction) {
                         case 1:
 //                            Add new room
+                            int room_id;
                             System.out.print("Please, write id new room (id last room - " + director.getLastRoomId() + ") (0 - back to menu): ");
                             room_id = scanner.nextInt();
                             if (room_id == 0) {
@@ -353,6 +348,7 @@ public class Main {
                     switch (selectedFunction) {
                         case 1:
 //                            Check in
+                            int room_id;
                             receptionist.showAllReservationRooms(0);
 //                            hotel.showAllRooms();
                             System.out.print("Please, write id room (0 - back to menu): ");
@@ -419,7 +415,7 @@ public class Main {
                         case 4:
 //                            Cancel reservation
                             receptionist.showAllReservationRooms(0);
-                            System.out.print("Please, write room id for cancel reservation: ");
+                            System.out.print("Please, write room id for cancel reservation (0 - Cancel): ");
                             room_id = scanner.nextInt();
                             if (room_id != 0) {
                                 receptionist.goCancelReservation(room_id);
@@ -452,6 +448,33 @@ public class Main {
             }
 
         }
+
+    }
+
+    private static boolean saveChanges() {
+
+        switch (role) {
+
+            case CLIENT:
+                hotel.theClientsList = client.theClientsList;
+                hotel.theRoomsList = client.theRoomsList;
+                break;
+            case CLEANERS:
+                hotel.theClientsList = cleaners.theClientsList;
+                hotel.theRoomsList = cleaners.theRoomsList;
+                break;
+            case DIRECTOR:
+                hotel.theClientsList = director.theClientsList;
+                hotel.theRoomsList = director.theRoomsList;
+                break;
+            case RECEPTIONIST:
+                hotel.theClientsList = receptionist.theClientsList;
+                hotel.theRoomsList = receptionist.theRoomsList;
+                break;
+
+        }
+
+        return true;
 
     }
 

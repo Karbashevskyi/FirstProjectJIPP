@@ -98,7 +98,7 @@ class Receptionist extends Hotel {
 
                         if (room.goCheckOut()) {
 
-                            System.out.print("confirmed.");
+                            System.out.println("confirmed.");
                             return true;
 
                         }
@@ -111,7 +111,7 @@ class Receptionist extends Hotel {
 
         }
 
-        System.out.print("no confirmed.");
+        System.out.println("no confirmed.");
         System.out.println();
         return false;
 

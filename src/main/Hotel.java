@@ -16,7 +16,13 @@ class Hotel {
 
     protected int getLastRoomId() {
 
-        return theRoomsList.get(theRoomsList.size() - 1).getId();
+	    if (checkTheRoomsList()) {
+
+            return theRoomsList.get(theRoomsList.size() - 1).getId();
+
+        }
+
+        return 0;
 
     }
 

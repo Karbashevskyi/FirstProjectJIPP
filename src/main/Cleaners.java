@@ -26,17 +26,39 @@ public class Cleaners extends Hotel {
 
     }
 
-    public void goCleaning(int id) {
+    /**
+     * @param id
+     */
+    public boolean goCleaning(int id) {
 
-        for (Room room : theRoomsList) {
+        System.out.print("Cleaning room id: " + id + ", is ");
 
-            if (room.getStatus() == StatusRoom.NEED_CLEANING && room.getId() == id) {
+        if (checkTheRoomsList()) {
 
-                room.goCleaning();
+            for (Room room : theRoomsList) {
+
+                if (room.getId() == id) {
+
+                    if (room.getStatus() == StatusRoom.NEED_CLEANING) {
+
+                        if (room.goCleaning()) {
+
+                            System.out.println("confirmed.");
+                            return true;
+
+                        }
+
+                    }
+
+                }
 
             }
 
         }
+
+        System.out.println("no confirmed.");
+        System.out.println();
+        return false;
 
     }
 
