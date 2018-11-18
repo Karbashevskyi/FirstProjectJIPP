@@ -12,169 +12,13 @@ class Hotel {
         theClientsList = new ArrayList<>();
         theRoomsList = new ArrayList<>();
 
-//		initRooms();
-//		getAllRooms();
-//		initClients();
-//
-//		if (makeBookingForClient(1)) {
-//
-//			getAllRooms();
-//            getAllClients();
-//
-//		}
-
 	}
-//
-//	private void initRooms() {
-//
-//		addNewRoom(1);
-//		addNewRoom(2);
-//		addNewRoom(3);
-//
-//	}
-//
-//    /**
-//     * @param id
-//     */
-//    private void addNewRoom(int id) {
-//
-//		theRoomsList.add(new Room(id));
-//
-//	}
-//
-//    /**
-//     *
-//     */
-//    private void getAllRooms() {
-//
-//		for (Room room: theRoomsList) {
-//
-//			System.out.println(room.toString());
-//
-//		}
-//
-//		System.out.println("-------------------------");
-//
-//	}
-//
-//    /**
-//     * @param id
-//     * @param booking_from
-//     * @param booking_to
-//     * @param gosc
-//     */
-//    private void goBooking(int id, String booking_from, String booking_to, Client gosc) {
-//
-//		if (id != 0 && booking_from != null && booking_to != null && gosc != null) {
-//
-//			for (Room room: theRoomsList) {
-//
-//				if (room.getId() == id) {
-//
-//					room.goReservation(gosc);
-//
-//				}
-//
-//			}
-//
-//		}
-//
-//	}
-//
-//    /**
-//     *
-//     */
-//    private void initClients() {
-//
-//		addNewClient(1, "Ivan", "Karbashevskyi", "+473053834", "ivankarbashevskyi@gmail.com", "ER 231254");
-//
-//	}
-//
-//    /**
-//     * @param id
-//     * @param name
-//     * @param last_name
-//     * @param phone
-//     * @param email
-//     * @param passport_number
-//     */
-//	private void addNewClient(int id, String name, String last_name, String phone, String email, String passport_number) {
-//
-//
-//		theClientsList.add(new Client(id, name, last_name, phone, email, passport_number));
-//
-//	}
-//
-//    /**
-//     * @param client_id
-//     */
-//    private void getAllBookingClient(int client_id) {
-//
-//        if (client_id != 0) {
-//
-//            System.out.println("\n Booking:");
-//
-//            for (Room room: theRoomsList) {
-//
-//                if (room.getStatus() == StatusRoom.BUSY) {
-//
-//                    if (room.getClient().getId() == client_id) {
-//
-//                        System.out.println(room.toString());
-//
-//                    }
-//
-//                }
-//
-//            }
-//
-//            System.out.println("--- \n");
-//
-//        }
-//
-//    }
-//
-//    /**
-//     *
-//     */
-//    private void getAllClients() {
-//
-//		System.out.println("Clients:");
-//
-//		for (Client gosc : theClientsList) {
-//
-//			System.out.println(gosc.getFullname());
-//            getAllBookingClient(gosc.getId());
-//
-//		}
-//		System.out.println("---");
-//
-//	}
-//
-//    /**
-//     * @param id
-//     * @return
-//     */
-//    boolean makeBookingForClient(int id) {
-//
-//		if (id != 0) {
-//
-//			for (Client gosc : theClientsList) {
-//
-//				if (gosc.getId() == id) {
-//
-//					goBooking(2, "12.12.2018", "15.12.2018", gosc);
-//					return true;
-//
-//				}
-//
-//			}
-//
-//		}
-//
-//		return false;
-//
-//	}
+
+    protected int getLastRoomId() {
+
+        return theRoomsList.get(theRoomsList.size() - 1).getId();
+
+    }
 
     protected boolean checkTheRoomsList() {
 
@@ -208,7 +52,12 @@ class Hotel {
 
 //    Can use: Receptionist, Client.
 
-    public boolean goReservation(int id, int client_id) {
+    /**
+     * @param id
+     * @param client_id
+     * @return
+     */
+    protected boolean goReservation(int id, int client_id) {
 
         System.out.print("Reservation for client id: " + client_id + ", room id: " + id + ", is ");
 
@@ -243,9 +92,13 @@ class Hotel {
 
 //    Can use: Receptionist, Client.
 
-    public boolean goCancelReservation(int id) {
+    /**
+     * @param id
+     * @return
+     */
+    protected boolean goCancelReservation(int id) {
 
-        System.out.println("Cancel reservation room id: " + id + ", is ");
+        System.out.print("Cancel reservation room id: " + id + ", is ");
 
         if (checkTheRoomsList()) {
 
@@ -257,7 +110,7 @@ class Hotel {
 
                         if (room.goCancelReservation()) {
 
-                            System.out.print("cancel.");
+                            System.out.println("confirmed.");
                             return true;
 
                         }
@@ -270,7 +123,7 @@ class Hotel {
 
         }
 
-        System.out.print("no cancel.");
+        System.out.println("no confirmed.");
         System.out.println();
         return false;
 
@@ -278,7 +131,7 @@ class Hotel {
 
 //    Can use: Receptionist, Client.
 
-    public void showAllFreeRooms() {
+    protected void showAllFreeRooms() {
 
         System.out.println("---------------------");
         System.out.println("- All FREE ROOMS");
@@ -317,7 +170,7 @@ class Hotel {
 
 //    Can use: Receptionist.
 
-    public void showAllBusyRooms() {
+    protected void showAllBusyRooms() {
 
         System.out.println("---------------------");
         System.out.println("- All BUSY ROOMS");
@@ -354,42 +207,140 @@ class Hotel {
 
     }
 
-//    Can use: Receptionist, Director, Client.
+//    Can use: Receptionist.
 
-//    public void showAllRooms() {
-//
-//        System.out.println("---------------------");
-//        System.out.println("- All ROOMS");
-//        System.out.println("---------------------");
-//
-//        if (checkTheRoomsList()) {
-//
-//            int counеRooms = 0;
-//
-//            for (Room room: theRoomsList) {
-//
-//                counеRooms += 1;
-//                System.out.println(room);
-//
-//            }
-//
-//            if (counеRooms == 0) {
-//
-//                System.out.println("Sorry. We no have rooms.");
-//
-//            } else {
-//
-//                System.out.println("We have: " + counеRooms + " rooms.");
-//
-//            }
-//
-//        }
-//
-//        System.out.println();
-//
-//    }
+    /**
+     * @param client_id
+     */
+    protected void showAllReservationRooms(int client_id) {
 
-    public void initRooms() {
+        System.out.println("---------------------");
+        System.out.println("- All RESERVATION ROOMS");
+        System.out.println("---------------------");
+
+        if (checkTheRoomsList()) {
+
+            int countReservationRooms = 0;
+
+            for (Room room: theRoomsList) {
+
+                if (client_id == 0) {
+
+                    if (room.getStatus() == StatusRoom.RESERVATION) {
+
+                        countReservationRooms += 1;
+                        System.out.println(room);
+
+                    }
+
+                } else {
+
+                    if (room.getStatus() == StatusRoom.RESERVATION && room.getClientId() == client_id) {
+
+                        countReservationRooms += 1;
+                        System.out.println(room);
+
+                    }
+
+                }
+
+            }
+
+            if (countReservationRooms == 0) {
+
+                System.out.println("Sorry. We no have reservation rooms.");
+
+            } else {
+
+                System.out.println("We have reservation: " + countReservationRooms + " rooms.");
+
+            }
+
+        }
+
+        System.out.println();
+
+    }
+
+//    Can use: Director.
+
+    protected void showAllNoLockedRooms() {
+
+        System.out.println("---------------------");
+        System.out.println("- All NO LOCKED ROOMS");
+        System.out.println("---------------------");
+
+        if (checkTheRoomsList()) {
+
+            int countNoLockedRoom = 0;
+
+            for (Room room: theRoomsList) {
+
+                if (room.getStatus() != StatusRoom.LOCKED) {
+
+                    countNoLockedRoom += 1;
+                    System.out.println(room);
+
+                }
+
+            }
+
+            if (countNoLockedRoom == 0) {
+
+                System.out.println("Sorry. We no have no locked rooms.");
+
+            } else {
+
+                System.out.println("We have no locked: " + countNoLockedRoom + " rooms.");
+
+            }
+
+        }
+
+        System.out.println();
+
+    }
+
+//    Can use: Director.
+
+    protected void showAllLockedRooms() {
+
+        System.out.println("---------------------");
+        System.out.println("- All LOCKED ROOMS");
+        System.out.println("---------------------");
+
+        if (checkTheRoomsList()) {
+
+            int countLockedRoom = 0;
+
+            for (Room room: theRoomsList) {
+
+                if (room.getStatus() == StatusRoom.LOCKED) {
+
+                    countLockedRoom += 1;
+                    System.out.println(room);
+
+                }
+
+            }
+
+            if (countLockedRoom == 0) {
+
+                System.out.println("Sorry. We have no locked rooms.");
+
+            } else {
+
+                System.out.println("We have locked: " + countLockedRoom + " rooms.");
+
+            }
+
+        }
+
+        System.out.println();
+
+    }
+
+    protected void initRooms() {
 
         addNewRoom(1);
         addNewRoom(2);
@@ -397,18 +348,35 @@ class Hotel {
 
     }
 
-    private void addNewRoom(int id) {
+    /**
+     * @param id
+     * @return
+     */
+    protected boolean addNewRoom(int id) {
 
-	    theRoomsList.add(new Room(id));
+        if (id != 0) {
+
+            theRoomsList.add(new Room(id));
+            return true;
+
+        }
+
+        return false;
 
     }
 
-    public void initClients() {
+    protected void initClients() {
 
 	    addNewClient(1, "Ivan Karbashevskyi", "ER 000000", "+48 111 11 11 11");
 
     }
 
+    /**
+     * @param id
+     * @param full_name
+     * @param passport
+     * @param phone
+     */
     protected void addNewClient(int id, String full_name, String passport, String phone) {
 
 	    theClientsList.add(new Client(id, full_name, passport, phone));

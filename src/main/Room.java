@@ -3,7 +3,7 @@ package main;
 class Room {
 
 	private int id;
-	private int client_id;
+	private int client_id = 0;
 	private StatusRoom status = StatusRoom.FREE;
 
     Room(int id) {
@@ -40,6 +40,7 @@ class Room {
     	if (status == StatusRoom.RESERVATION) {
 
     		status = StatusRoom.FREE;
+    		client_id = 0;
     		return true;
 
 		}
@@ -175,7 +176,7 @@ class Room {
 
 		if (status == StatusRoom.RESERVATION) {
 
-			string = "is reservation. Client: " + client_id;
+			string = "is reservation. Client id: " + client_id;
 
 		}
 

@@ -18,7 +18,7 @@ class Receptionist extends Hotel {
 
     protected int getLastClientId() {
 
-        return theClientsList.get(theRoomsList.size() - 1).getId();
+        return theClientsList.get(theClientsList.size() - 1).getId();
 
     }
 

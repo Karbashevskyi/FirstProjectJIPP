@@ -16,13 +16,9 @@ public class Director extends Hotel{
 
     }
 
-    public void addNewRoom(int id) {
+    public boolean goLocked(int id) {
 
-        theRoomsList.add(new Room(id));
-
-    }
-
-    public void goLocked(int id) {
+        System.out.print("Locked for room id: " + id + ", is ");
 
         for (Room room : theRoomsList) {
 
@@ -31,7 +27,8 @@ public class Director extends Hotel{
                 if (room.getStatus() != StatusRoom.BUSY) {
 
                     room.goLocked();
-                    break;
+                    System.out.println("confirmed.");
+                    return true;
 
                 }
 
@@ -39,9 +36,15 @@ public class Director extends Hotel{
 
         }
 
+        System.out.println("nod confirmed.");
+        System.out.println();
+        return false;
+
     }
 
-    public void goCancelLocked(int id) {
+    public boolean goCancelLocked(int id) {
+
+        System.out.print("Cancel locked for room id: " + id + ", is ");
 
         for (Room room : theRoomsList) {
 
@@ -50,13 +53,18 @@ public class Director extends Hotel{
                 if (room.getStatus() == StatusRoom.LOCKED) {
 
                     room.goCancelLocked();
-                    break;
+                    System.out.println("confirmed.");
+                    return true;
 
                 }
 
             }
 
         }
+
+        System.out.println("nod confirmed.");
+        System.out.println();
+        return false;
 
     }
 

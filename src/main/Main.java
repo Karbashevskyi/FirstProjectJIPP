@@ -15,143 +15,153 @@ public class Main {
 	
 	public static void main(String args[]) {
 
-        authorisation("Hello, this is authorization form, please write value to input.");
+//        authorisation("Hello, this is authorization form, please write value to input.");
+        selectRole();
 
 	}
 
-    private static void authorisation(String message) {
-
-	    getInformationAboutAccounts();
-        System.out.println(message);
-	    System.out.print("Login: ");
-        String login = scanner.nextLine();
-	    System.out.println();
-	    System.out.print("Password: ");
-        String password = scanner.nextLine();
-
-        if (login.isEmpty() || password.isEmpty()) {
-
-            authorisation("Login or password is empty!");
-
-        }
-
-        if (password.equals("123")) {
-
-            switch (login) {
-
-                case "receptionist":
-                    role = Role.RECEPTIONIST;
-                    receptionist.initClients();
-                    receptionist.initRooms();
-                    break;
-                case "director":
-                    role = Role.DIRECTOR;
-                    director.initClients();
-                    director.initRooms();
-                    break;
-                case "cleaners":
-                    role = Role.CLEANERS;
-                    cleaners.initClients();
-                    cleaners.initRooms();
-                    break;
-                case "ivan":
-                    role = Role.CLIENT;
-                    client = new Client(1, "Ivan Karbashevskyi", "ER 000000", "+48 000 00 00 00");
-                    client.initClients();
-                    client.initRooms();
-                    break;
-                case "alex":
-                    role = Role.CLIENT;
-                    client = new Client(2, "Aleksander Golovin", "AK 111111", "+48 111 11 11 11");
-                    client.initClients();
-                    client.initRooms();
-                    break;
-                default:
-                    authorisation("Login is no good. Please try again!");
-                    break;
-
-            }
-
-            menuForRole();
-
-        } else {
-
-            authorisation("Password is no good. Please try again!");
-
-        }
-
-    }
-
-    private static void getInformationAboutAccounts() {
-
-        System.out.println("***********************************************************************");
-        System.out.println("* INFORMATION ABOUT ACCOUNTS *");
-        System.out.println("***********************************************************************");
-        System.out.println("* Receptionist *");
-        System.out.println("* Login: receptionist");
-        System.out.println("* Password: 123");
-        System.out.println("***********************************************************************");
-        System.out.println("* Director *");
-        System.out.println("* Login: director");
-        System.out.println("* Password: 123");
-        System.out.println("***********************************************************************");
-        System.out.println("* Cleaners *");
-        System.out.println("* Login: cleaners");
-        System.out.println("* Password: 123");
-        System.out.println("***********************************************************************");
-        System.out.println("* Client 1 *");
-        System.out.println("* Login: ivan");
-        System.out.println("* Password: 123");
-        System.out.println("***********************************************************************");
-        System.out.println("* Client 2 *");
-        System.out.println("* Login: alex");
-        System.out.println("* Password: 123");
-        System.out.println("***********************************************************************");
-        System.out.println();
-
-    }
-
-//    private static void selectRole() {
+//    private static void authorisation(String message) {
 //
-//	    br();
-//        System.out.println("Hello, select role: ");
-//        System.out.println("1." + Role.CLIENT + ".");
-//        System.out.println("2." + Role.CLEANERS + ".");
-//        System.out.println("3." + Role.RECEPTIONIST + ".");
-//        System.out.println("4." + Role.DIRECTOR + ".");
-//        System.out.print("Write here number: ");
+//	    getInformationAboutAccounts();
+//        System.out.println(message);
+//	    System.out.print("Login: ");
+//        String login = scanner.nextLine();
+//	    System.out.println();
+//	    System.out.print("Password: ");
+//        String password = scanner.nextLine();
 //
-//        try {
+//        if (login.isEmpty() || password.isEmpty()) {
 //
-//            int id_role = scanner.nextInt();
+//            authorisation("Login or password is empty!");
 //
-//            switch (id_role) {
-//                case 1:
-//                    role = Role.CLIENT;
-//                    break;
-//                case 2:
-//                    role = Role.CLEANERS;
-//                    break;
-//                case 3:
+//        }
+//
+//        if (password.equals("123")) {
+//
+//            switch (login) {
+//
+//                case "receptionist":
 //                    role = Role.RECEPTIONIST;
+//                    receptionist.initClients();
+//                    receptionist.initRooms();
 //                    break;
-//                case 4:
+//                case "director":
 //                    role = Role.DIRECTOR;
+//                    director.initClients();
+//                    director.initRooms();
+//                    break;
+//                case "cleaners":
+//                    role = Role.CLEANERS;
+//                    cleaners.initClients();
+//                    cleaners.initRooms();
+//                    break;
+//                case "ivan":
+//                    role = Role.CLIENT;
+//                    client = new Client(1, "Ivan Karbashevskyi", "ER 000000", "+48 000 00 00 00");
+//                    client.initClients();
+//                    client.initRooms();
+//                    break;
+//                case "alex":
+//                    role = Role.CLIENT;
+//                    client = new Client(2, "Aleksander Golovin", "AK 111111", "+48 111 11 11 11");
+//                    client.initClients();
+//                    client.initRooms();
 //                    break;
 //                default:
-//                    selectRole();
+//                    authorisation("Login is no good. Please try again!");
 //                    break;
+//
 //            }
 //
 //            menuForRole();
 //
-//        } catch (InputMismatchException e) {
+//        } else {
 //
-//            System.out.println("Please, write integer value.");
+//            authorisation("Password is no good. Please try again!");
 //
 //        }
 //
 //    }
+//
+//    private static void getInformationAboutAccounts() {
+//
+//        System.out.println("***********************************************************************");
+//        System.out.println("* INFORMATION ABOUT ACCOUNTS *");
+//        System.out.println("***********************************************************************");
+//        System.out.println("* Receptionist *");
+//        System.out.println("* Login: receptionist");
+//        System.out.println("* Password: 123");
+//        System.out.println("***********************************************************************");
+//        System.out.println("* Director *");
+//        System.out.println("* Login: director");
+//        System.out.println("* Password: 123");
+//        System.out.println("***********************************************************************");
+//        System.out.println("* Cleaners *");
+//        System.out.println("* Login: cleaners");
+//        System.out.println("* Password: 123");
+//        System.out.println("***********************************************************************");
+//        System.out.println("* Client 1 *");
+//        System.out.println("* Login: ivan");
+//        System.out.println("* Password: 123");
+//        System.out.println("***********************************************************************");
+//        System.out.println("* Client 2 *");
+//        System.out.println("* Login: alex");
+//        System.out.println("* Password: 123");
+//        System.out.println("***********************************************************************");
+//        System.out.println();
+//
+//    }
+
+    private static void selectRole() {
+
+	    br();
+        System.out.println("Hello, select role: ");
+        System.out.println("1." + Role.CLIENT + ".");
+        System.out.println("2." + Role.CLEANERS + ".");
+        System.out.println("3." + Role.RECEPTIONIST + ".");
+        System.out.println("4." + Role.DIRECTOR + ".");
+        System.out.print("Write here number: ");
+
+        try {
+
+            int id_role = scanner.nextInt();
+
+            switch (id_role) {
+                case 1:
+                    role = Role.CLIENT;
+                    client = new Client(1, "Name Surname", "ER 000000", "+48 000 00 00 00");
+                    client.initClients();
+                    client.initRooms();
+                    break;
+                case 2:
+                    role = Role.CLEANERS;
+                    cleaners.initClients();
+                    cleaners.initRooms();
+                    break;
+                case 3:
+                    role = Role.RECEPTIONIST;
+                    receptionist.initClients();
+                    receptionist.initRooms();
+                    break;
+                case 4:
+                    role = Role.DIRECTOR;
+                    director.initClients();
+                    director.initRooms();
+                    break;
+                default:
+                    selectRole();
+                    break;
+            }
+
+            menuForRole();
+
+        } catch (InputMismatchException e) {
+
+            System.out.println("Please, write integer value.");
+
+        }
+
+    }
 
     private static void menuForRole() {
 
@@ -159,7 +169,7 @@ public class Main {
         System.out.println("----------------------------------------");
         System.out.println("- Menu for " + role);
         System.out.println("----------------------------------------");
-        System.out.println("0. Exit.");
+        System.out.println("0. Change role.");
         System.out.println();
 
         switch (role) {
@@ -181,21 +191,15 @@ public class Main {
                 System.out.println("3. Cancel locked room.");
                 break;
             case RECEPTIONIST:
-//                System.out.println("1. Check in room");
-//                System.out.println("2. Check out room");
-//                System.out.println("3. Reservation room");
-//                System.out.println("*********************************************************");
-//                System.out.println("* When you selected room you can do with room next:");
-//                System.out.println("- Check in.");
-//                System.out.println("- Check out.");
-//                System.out.println("- Reservation.");
-//                System.out.println("*********************************************************");
                 System.out.println("My full name: " + receptionist.getFullName());
                 System.out.println("1. Check in room.");
                 System.out.println("2. Check out room.");
                 System.out.println("3. Reservation room.");
                 System.out.println("4. Cancel reservation room.");
                 System.out.println("5. Show all free rooms.");
+                break;
+            default:
+                selectRole();
                 break;
 
         }
@@ -224,26 +228,51 @@ public class Main {
 
     }
 
+    /**
+     * @param selectedFunction
+     */
     private static void doSelectedFunction(int selectedFunction) {
 
 	    if (selectedFunction == 0) {
 
-	        System.out.println("Exit.");
+//	        System.out.println("Exit.");
+            selectRole();
 
         } else {
 
 	        br();
+            int room_id;
 
 	        switch (role) {
 
                 case CLIENT:
                     switch (selectedFunction) {
                         case 1:
+//                            Show all free rooms
                             client.showAllFreeRooms();
+
                             break;
                         case 2:
+//                            Reservation free room.
+                            client.showAllFreeRooms();
+                            System.out.print("Please, write id room (0 - back to menu): ");
+                            room_id = scanner.nextInt();
+                            if (room_id != 0) {
+                                client.goReservation(room_id, client.getId());
+                            } else {
+                                menuForRole();
+                            }
                             break;
                         case 3:
+//                            Cancel reservation
+                            client.showAllReservationRooms(client.getId());
+                            System.out.print("Please, write id room (0 - back to menu): ");
+                            room_id = scanner.nextInt();
+                            if (room_id != 0) {
+                                client.goCancelReservation(room_id);
+                            } else {
+                                menuForRole();
+                            }
                             break;
                         default:
                             menuForRole();
@@ -253,9 +282,19 @@ public class Main {
                 case CLEANERS:
                     switch (selectedFunction) {
                         case 1:
+//                            Show all need cleaning room
                             cleaners.showAllNeedCleaningRooms();
                             break;
                         case 2:
+//                            Cleaning room
+                            cleaners.showAllNeedCleaningRooms();
+                            System.out.print("Please, write id room (0 - back to menu): ");
+                            room_id = scanner.nextInt();
+                            if (room_id != 0) {
+                                cleaners.goCleaning(room_id);
+                            } else {
+                                menuForRole();
+                            }
                             break;
                         default:
                             menuForRole();
@@ -264,10 +303,38 @@ public class Main {
                 case DIRECTOR:
                     switch (selectedFunction) {
                         case 1:
+//                            Add new room
+                            System.out.print("Please, write id new room (id last room - " + director.getLastRoomId() + ") (0 - back to menu): ");
+                            room_id = scanner.nextInt();
+                            if (room_id == 0) {
+                                menuForRole();
+                            } else {
+                                if (director.addNewRoom(room_id)) {
+                                    System.out.println("Great, you add new room with id - " + room_id);
+                                }
+                            }
                             break;
                         case 2:
+//                           Locked room
+                            director.showAllNoLockedRooms();
+                            System.out.print("Please, write id room (0 - back to menu): ");
+                            room_id = scanner.nextInt();
+                            if (room_id == 0) {
+                                menuForRole();
+                            } else {
+                                director.goLocked(room_id);
+                            }
                             break;
                         case 3:
+//                            Cancel locked room
+                            director.showAllLockedRooms();
+                            System.out.print("Please, write id room (0 - back to menu): ");
+                            room_id = scanner.nextInt();
+                            if (room_id == 0) {
+                                menuForRole();
+                            } else {
+                                director.goCancelLocked(room_id);
+                            }
                             break;
                         default:
                             menuForRole();
@@ -275,16 +342,17 @@ public class Main {
                     }
                     break;
                 case RECEPTIONIST:
-                    int room_id;
                     switch (selectedFunction) {
                         case 1:
+//                            Check in
+                            receptionist.showAllReservationRooms(0);
 //                            hotel.showAllRooms();
-//                            System.out.print("Please, write id room (0 - back to menu): ");
-//                            int room_id = scanner.nextInt();
-//                            hotel.setIdSelectedRoom(room_id);
-//                            hotel.receptionist.setIdSelectedRoom(room_id);
+                            System.out.print("Please, write id room (0 - back to menu): ");
+                            room_id = scanner.nextInt();
+                            receptionist.goCheckIn(room_id);
                             break;
                         case 2:
+//                            Check out
                             receptionist.showAllBusyRooms();
 
                             System.out.print("Write id room (0 - Cancel): ");
@@ -297,13 +365,14 @@ public class Main {
 
                             break;
                         case 3:
+//                            Reservation
                             receptionist.showAllFreeRooms();
 
                             System.out.print("Write id room (0 - Cancel): ");
                             room_id = scanner.nextInt();
                             if (room_id != 0) {
 
-                                System.out.print("\n Write: \n 1 - if you want to select client from list \n 2 - if you want to create new client \n You choice: ");
+                                System.out.print("\n Write: \n 0 - If you want to change selected room. \n 1 - if you want to select client from list. \n 2 - if you want to create new client. \n You choice: ");
                                 int local_choice = scanner.nextInt();
                                 if (local_choice == 1) {
 
@@ -340,38 +409,39 @@ public class Main {
                             }
                             break;
                         case 4:
+//                            Cancel reservation
+                            receptionist.showAllReservationRooms(0);
+                            System.out.print("Please, write room id for cancel reservation: ");
+                            room_id = scanner.nextInt();
+                            if (room_id != 0) {
+                                receptionist.goCancelReservation(room_id);
+                            }
                             break;
                         case 5:
+//                            Show all free rooms
                             receptionist.showAllFreeRooms();
                             break;
                         default:
+//                            Back to menu
                             menuForRole();
                             break;
                     }
-
-                    System.out.print("Back to menu (1 - yes): ");
-                    int backToMenu = scanner.nextInt();
-                    if (backToMenu == 1) {
-
-                        menuForRole();
-
-                    }
-
                     break;
                 default:
-                    authorisation("Please, write login and password!");
+//                    If this user no have role.
+//                    authorisation("Please, write login and password!");
+                    selectRole();
                     break;
 
             }
 
+            System.out.print("Back to menu (1 - yes, 0 - exit): ");
+            int backToMenu = scanner.nextInt();
+            if (backToMenu == 1) {
 
-//            System.out.print("Do you wont back to menu (1 - yes, 0 - no)? ");
-//            int toBack = scanner.nextInt();
-//            if (toBack == 1) {
-//                menuForRole();
-//            } else {
-//                // TODO Add function for exit from program.
-//            }
+                menuForRole();
+
+            }
 
         }
 
