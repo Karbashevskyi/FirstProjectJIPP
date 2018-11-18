@@ -53,7 +53,7 @@ class Receptionist extends Hotel {
 
     public boolean goCheckIn(int id) {
 
-        System.out.println("Check in room id: " + id + ", is ");
+        System.out.print("Check in room id: " + id + ", is ");
 
         if (checkTheRoomsList()) {
 
@@ -65,7 +65,7 @@ class Receptionist extends Hotel {
 
                         if (room.goCheckIn()) {
 
-                            System.out.print("check in");
+                            System.out.println("confirmed.");
                             return true;
 
                         }
@@ -78,7 +78,7 @@ class Receptionist extends Hotel {
 
         }
 
-        System.out.print("no check in.");
+        System.out.println("no confirmed.");
         System.out.println();
         return false;
 
@@ -86,7 +86,7 @@ class Receptionist extends Hotel {
 
     public boolean goCheckOut(int id) {
 
-        System.out.println("Check out room id: " + id + ", is ");
+        System.out.print("Check out room id: " + id + ", is ");
 
         if (checkTheRoomsList()) {
 
@@ -98,7 +98,7 @@ class Receptionist extends Hotel {
 
                         if (room.goCheckOut()) {
 
-                            System.out.print("check out");
+                            System.out.print("confirmed.");
                             return true;
 
                         }
@@ -111,7 +111,7 @@ class Receptionist extends Hotel {
 
         }
 
-        System.out.print("no check out.");
+        System.out.print("no confirmed.");
         System.out.println();
         return false;
 

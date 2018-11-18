@@ -50,6 +50,43 @@ class Hotel {
 
     }
 
+    protected void showAllNeedCleaningRooms() {
+
+        System.out.println("---------------------");
+        System.out.println("- All NEED CLEANING ROOMS");
+        System.out.println("---------------------");
+
+        if (checkTheRoomsList()) {
+
+            int countNeedCleaningRooms = 0;
+
+            for (Room room: theRoomsList) {
+
+                if (room.getStatus() == StatusRoom.NEED_CLEANING) {
+
+                    countNeedCleaningRooms += 1;
+                    System.out.println(room);
+
+                }
+
+            }
+
+            if (countNeedCleaningRooms == 0) {
+
+                System.out.println("Sorry. We no have need cleaning rooms.");
+
+            } else {
+
+                System.out.println("We have need cleaning: " + countNeedCleaningRooms + " rooms.");
+
+            }
+
+        }
+
+        System.out.println();
+
+    }
+
 //    Can use: Receptionist, Client.
 
     /**

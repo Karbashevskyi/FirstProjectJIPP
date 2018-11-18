@@ -130,23 +130,31 @@ public class Main {
                 case 1:
                     role = Role.CLIENT;
                     client = new Client(1, "Name Surname", "ER 000000", "+48 000 00 00 00");
-                    client.initClients();
-                    client.initRooms();
+                    if (client.theRoomsList.isEmpty()) {
+                        client.initClients();
+                        client.initRooms();
+                    }
                     break;
                 case 2:
                     role = Role.CLEANERS;
-                    cleaners.initClients();
-                    cleaners.initRooms();
+                    if (cleaners.theRoomsList.isEmpty()) {
+                        cleaners.initClients();
+                        cleaners.initRooms();
+                    }
                     break;
                 case 3:
                     role = Role.RECEPTIONIST;
-                    receptionist.initClients();
-                    receptionist.initRooms();
+                    if (receptionist.theRoomsList.isEmpty()) {
+                        receptionist.initClients();
+                        receptionist.initRooms();
+                    }
                     break;
                 case 4:
                     role = Role.DIRECTOR;
-                    director.initClients();
-                    director.initRooms();
+                    if (director.theRoomsList.isEmpty()) {
+                        director.initClients();
+                        director.initRooms();
+                    }
                     break;
                 default:
                     selectRole();
