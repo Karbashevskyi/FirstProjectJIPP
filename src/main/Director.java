@@ -16,6 +16,10 @@ public class Director extends Hotel{
 
     }
 
+    /**
+     * @param id
+     * @return
+     */
     public boolean goLocked(int id) {
 
         System.out.print("Locked for room id: " + id + ", is ");
@@ -42,6 +46,10 @@ public class Director extends Hotel{
 
     }
 
+    /**
+     * @param id
+     * @return
+     */
     public boolean goCancelLocked(int id) {
 
         System.out.print("Cancel locked for room id: " + id + ", is ");

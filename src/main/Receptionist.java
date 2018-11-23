@@ -84,6 +84,10 @@ class Receptionist extends Hotel {
 
     }
 
+    /**
+     * @param id
+     * @return
+     */
     public boolean goCheckOut(int id) {
 
         System.out.print("Check out room id: " + id + ", is ");
