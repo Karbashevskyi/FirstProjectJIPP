@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FirstProjectJIPP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FirstProjectJIPP_jar</output-path>
+    <root id="archive" name="FirstProjectJIPP.jar">
+      <element id="module-output" name="FirstProjectJIPP" />
+    </root>
+  </artifact>
+</component>
