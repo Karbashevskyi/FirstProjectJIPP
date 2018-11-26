@@ -5,14 +5,29 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import core.Hotel;
 
 public class Main extends Application {
 
+    private Hotel hotel = new Hotel();
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
+
+        Parent root = fxmlLoader.load();
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+
+        Controller login = fxmlLoader.getController();
+
+        hotel.initClients();
+        hotel.initRooms();
+
+        login.setHotel(hotel);
+
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 

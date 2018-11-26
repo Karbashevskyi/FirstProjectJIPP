@@ -1,7 +1,6 @@
 package core;
 
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
 
 import static core.StatusRoom.*;
 
