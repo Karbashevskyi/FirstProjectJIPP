@@ -2,39 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91d413ac-230a-4a28-acde-fc10a558e531" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cleaners/CleanersHome.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cleaners/CleanersHomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/ClientHomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Receptionist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/director/DirectorHome.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/director/DirectorHomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Window.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Window.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Window/client/Home.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Window/client/Home.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Window/core/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/core/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Window/core/StatusRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/core/StatusRoom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Window/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Window/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Window/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Home.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,6 +20,7 @@
     <session id="449814745">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -67,11 +41,13 @@
         <counts>
           <entry key="fxml" value="12" />
           <entry key="java" value="2423" />
+          <entry key="txt" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2423" />
+          <entry key="PLAIN_TEXT" value="33" />
           <entry key="XML" value="12" />
         </counts>
       </usages-collector>
@@ -91,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="88" column="41" lean-forward="true" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+            <state relative-caret-position="410">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -307,7 +283,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543251146615" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543275422403" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -343,16 +319,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543188195858</updated>
-      <workItem from="1543188201385" duration="11432000" />
+      <workItem from="1543188201385" duration="11517000" />
     </task>
+    <task id="LOCAL-00001" summary="H: Need fix small problem.">
+      <created>1543275403165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543275403165</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11432000" />
+    <option name="totallyTimeSpent" value="11517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -367,7 +350,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -389,6 +372,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="H: Need fix small problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="H: Need fix small problem." />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
@@ -586,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="88" column="41" lean-forward="true" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+        <state relative-caret-position="410">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
