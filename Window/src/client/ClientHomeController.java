@@ -21,6 +21,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
+import sample.Controller;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -37,8 +39,6 @@ public class ClientHomeController implements Initializable {
     private int selectRoomId = 0;
     private int selectedRoomIdForCancelReservation = 0;
 
-    private List<Room> list = new ArrayList();
-
     @FXML private Label lb_client_id;
     @FXML private Label lb_selected_room_id;
     @FXML private TableView table_rooms;
@@ -47,42 +47,6 @@ public class ClientHomeController implements Initializable {
     @FXML private Label lb_selected_room_id_for_cancel_reservation;
     private Hotel hotel;
     private Client client;
-
-    private ObservableList getInitialTableData(StatusRoom status) {
-
-        if (list.isEmpty()) {
-
-            list.add(new Room(1));
-            list.add(new Room(2));
-            list.add(new Room(3));
-            list.add(new Room(4));
-            list.add(new Room(5));
-            list.add(new Room(6));
-            list.add(new Room(7));
-            list.add(new Room(8));
-            list.add(new Room(9));
-            list.add(new Room(10));
-            list.add(new Room(11));
-            list.add(new Room(13));
-
-        }
-
-        List<Room> localList = new ArrayList();
-
-        for (Room room: list) {
-
-            if (room.getStatus() == status) {
-
-                localList.add(room);
-
-            }
-
-        }
-
-        ObservableList data = FXCollections.observableList(localList);
-
-        return data;
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -98,11 +62,11 @@ public class ClientHomeController implements Initializable {
                 switch (newTab.getText()) {
                     case "All free rooms":
                         System.out.println("Refresh table on: All free rooms");
-                        table_rooms.setItems(getInitialTableData(StatusRoom.FREE));
+                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE));
                         break;
                     case "My reservations":
                         System.out.println("Refresh table on: My reservations");
-                        table_reservations.setItems(getInitialTableData(StatusRoom.RESERVATION));
+                        table_reservations.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.RESERVATION));
                         break;
                 }
             });
@@ -123,7 +87,7 @@ public class ClientHomeController implements Initializable {
         id.setCellValueFactory(new PropertyValueFactory<Room, String>("id"));
         status.setCellValueFactory(new PropertyValueFactory<Room, String>("status"));
 
-        table_rooms.setItems(getInitialTableData(StatusRoom.FREE));
+        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE));
 
         table_rooms.getSelectionModel().selectedItemProperty().addListener((ChangeListener<Room>) (observable, oldValue, newValue) -> {
 
@@ -168,7 +132,10 @@ public class ClientHomeController implements Initializable {
     @FXML
     private void pressBtnLogout(ActionEvent event) throws IOException {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/sample/sample.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/sample.fxml"));
+        Parent parent = fxmlLoader.load();
+        Controller home = fxmlLoader.getController();
+        home.setHotel(hotel);
         Scene scene = new Scene(parent);
         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         appStage.setScene(scene);
@@ -187,7 +154,7 @@ public class ClientHomeController implements Initializable {
 
         } else {
 
-            for (Room room: list) {
+            for (Room room: hotel.theRoomsList) {
 
                 if (room.getId() == selectRoomId && room.getStatus() == StatusRoom.FREE) {
 
@@ -200,8 +167,8 @@ public class ClientHomeController implements Initializable {
 
                     if (result.get() == ButtonType.OK) {
 
-                        room.goReservation(client.getId());
-                        table_rooms.setItems(getInitialTableData(StatusRoom.FREE));
+                        room.goReservation(client.getId(), client.getFullName());
+                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE));
 //                        table_rooms.refresh();
 
                     }
@@ -227,7 +194,7 @@ public class ClientHomeController implements Initializable {
 
         } else {
 
-            for (Room room: list) {
+            for (Room room: hotel.theRoomsList) {
 
                 if (room.getId() == selectedRoomIdForCancelReservation && room.getStatus() == StatusRoom.RESERVATION) {
 
@@ -239,7 +206,7 @@ public class ClientHomeController implements Initializable {
                     if (result.get() == ButtonType.OK) {
 
                         room.goCancelReservation();
-                        table_reservations.setItems(getInitialTableData(StatusRoom.RESERVATION));
+                        table_reservations.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.RESERVATION));
 
                     }
 

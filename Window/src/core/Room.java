@@ -1,32 +1,32 @@
 package core;
 
-import javafx.beans.property.SimpleIntegerProperty;
-
 import static core.StatusRoom.*;
 
-public class Room {
+public class Room extends Hotel {
 
-    private SimpleIntegerProperty id;
-    private SimpleIntegerProperty client_id = new SimpleIntegerProperty(0);
+    private int id;
+    private int client_id = 0;
+    private String client_full_name = null;
     private StatusRoom status = FREE;
 
     public Room(int id) {
 
-        this.id = new SimpleIntegerProperty(id);
+        this.id = id;
 
     }
 
     /**
      * @param client_id
      */
-    public boolean goReservation(int client_id) {
+    public boolean goReservation(int client_id, String client_full_name) {
 
         if (status == FREE) {
 
             if (client_id != 0) {
 
                 status = RESERVATION;
-                this.client_id = new SimpleIntegerProperty(client_id);
+                this.client_id = client_id;
+                this.client_full_name = client_full_name;
                 return true;
 
             }
@@ -47,7 +47,7 @@ public class Room {
         if (status == RESERVATION) {
 
             status = FREE;
-            client_id = new SimpleIntegerProperty(0);
+            client_id = 0;
             return true;
 
         }
@@ -141,16 +141,22 @@ public class Room {
      */
     public int getId() {
 
-        return id.get();
+        return id;
+
+    }
+
+    public String getClient_full_name() {
+
+        return client_full_name;
 
     }
 
     /**
      * @return
      */
-    public int getClientId() {
+    public int getClient_id() {
 
-        return client_id.get();
+        return client_id;
 
     }
 
@@ -203,7 +209,7 @@ public class Room {
 //        }
 //
 //        return "Room " + id + " " + string;
-        return id.toString();
+        return "Room id: " + id + ", client id:" + client_id + ".";
 
     }
 }

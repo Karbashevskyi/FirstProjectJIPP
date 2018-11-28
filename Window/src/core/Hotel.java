@@ -1,16 +1,46 @@
 package core;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class Hotel {
 
     public ArrayList<Client> theClientsList;
-    protected ArrayList<Room> theRoomsList;
+    public ArrayList<Room> theRoomsList;
 
     public Hotel() {
 
         theClientsList = new ArrayList<>();
         theRoomsList = new ArrayList<>();
+
+    }
+
+    public ObservableList getObservableRoomListWithSelectedStatus(StatusRoom status) {
+
+        List<Room> localList = new ArrayList();
+
+        for (Room room: theRoomsList) {
+
+            if (status == null) {
+
+                localList.add(room);
+
+            }
+
+            if (status != null && room.getStatus() == status) {
+
+                localList.add(room);
+
+            }
+
+        }
+
+        ObservableList data = FXCollections.observableList(localList);
+
+        return data;
 
     }
 
@@ -26,7 +56,7 @@ public class Hotel {
 
     }
 
-    protected boolean checkTheRoomsList() {
+    public boolean checkTheRoomsList() {
 
         if (theRoomsList.isEmpty()) {
 
@@ -41,7 +71,7 @@ public class Hotel {
 
     }
 
-    protected boolean checkTheClientsList() {
+    public boolean checkTheClientsList() {
 
         if (theClientsList.isEmpty()) {
 
@@ -100,7 +130,7 @@ public class Hotel {
      * @param client_id
      * @return
      */
-    protected boolean goReservation(int id, int client_id) {
+    protected boolean goReservation(int id, int client_id, String client_full_name) {
 
         System.out.print("Reservation for client id: " + client_id + ", room id: " + id + ", is ");
 
@@ -112,7 +142,7 @@ public class Hotel {
 
                     if (room.getStatus() == StatusRoom.FREE) {
 
-                        if (room.goReservation(client_id)) {
+                        if (room.goReservation(client_id, client_full_name)) {
 
                             System.out.println("confirmed.");
                             return true;
@@ -278,7 +308,7 @@ public class Hotel {
 
                 } else {
 
-                    if (room.getStatus() == StatusRoom.RESERVATION && room.getClientId() == client_id) {
+                    if (room.getStatus() == StatusRoom.RESERVATION && room.getClient_id() == client_id) {
 
                         countReservationRooms += 1;
                         System.out.println(room);

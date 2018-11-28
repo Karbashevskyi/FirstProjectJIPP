@@ -73,26 +73,32 @@ public class Controller {
 
     private void authClient(ActionEvent event) throws IOException {
 
-        for (Client client: hotel.theClientsList) {
+        System.out.println(hotel);
+
+        if (hotel.checkTheRoomsList()) {
+
+            for (Client client : hotel.theClientsList) {
 
 //        Check data from input.
-            if (client.getEmail().equals(inp_email.getText()) && client.getPassword().equals(inp_password.getText())) {
+                if (client.getEmail().equals(inp_email.getText()) && client.getPassword().equals(inp_password.getText())) {
 
 //                Open new window for role.
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/client/ClientHome.fxml"));
-                Parent parent = fxmlLoader.load();
-                ClientHomeController home = fxmlLoader.getController();
-                home.setHotel(hotel);
-                home.setClient(client);
-                Scene scene = new Scene(parent);
-                Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                appStage.setScene(scene);
-                appStage.setResizable(false);
-                appStage.show();
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/client/ClientHome.fxml"));
+                    Parent parent = fxmlLoader.load();
+                    ClientHomeController home = fxmlLoader.getController();
+                    home.setHotel(hotel);
+                    home.setClient(client);
+                    Scene scene = new Scene(parent);
+                    Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    appStage.setScene(scene);
+                    appStage.setResizable(false);
+                    appStage.show();
 
-            } else {
+                } else {
 
-                System.out.println("Warning!");
+                    System.out.println("Warning!");
+
+                }
 
             }
 
