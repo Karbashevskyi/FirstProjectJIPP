@@ -11,14 +11,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import sample.Controller;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class ReceptionistHomeController {
 
@@ -55,32 +54,26 @@ public class ReceptionistHomeController {
 
         Platform.runLater(() -> {
 
-            getInitTableRooms();
+            tb_status.setMinWidth(100);
+            tb_client_full_name.setMinWidth(200);
 
-        });
+            tb_id.setCellValueFactory(new PropertyValueFactory<Room, Integer>("id"));
+            tb_status.setCellValueFactory(new PropertyValueFactory<Room, StatusRoom>("status"));
+            tb_client_full_name.setCellValueFactory(new PropertyValueFactory<Room, String>("client_full_name"));
 
-    }
+            table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0));
 
-    private void getInitTableRooms() {
+            table_rooms.getSelectionModel().selectedItemProperty().addListener((ChangeListener<Room>) (observable, oldValue, newValue) -> {
 
-        tb_status.setMinWidth(100);
-        tb_client_full_name.setMinWidth(200);
+                if (newValue == null) {
+                    lb_selected_room_id.setText("Selected room id: ");
+                    return;
+                }
 
-        tb_id.setCellValueFactory(new PropertyValueFactory<Room, Integer>("id"));
-        tb_status.setCellValueFactory(new PropertyValueFactory<Room, StatusRoom>("status"));
-        tb_client_full_name.setCellValueFactory(new PropertyValueFactory<Room, String>("client_full_name"));
+                selectRoomId = newValue.getId();
+                lb_selected_room_id.setText("Selected room id: " + newValue.getId());
 
-        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null));
-
-        table_rooms.getSelectionModel().selectedItemProperty().addListener((ChangeListener<Room>) (observable, oldValue, newValue) -> {
-
-            if (newValue == null) {
-                lb_selected_room_id.setText("Select room id: ");
-                return;
-            }
-
-            selectRoomId = newValue.getId();
-            lb_selected_room_id.setText("Selected room id: " + newValue.getId());
+            });
 
         });
 
@@ -89,10 +82,76 @@ public class ReceptionistHomeController {
     @FXML
     private void pressCheckIn(ActionEvent event) {
 
+        if (selectRoomId == 0) {
+
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Need select free room for create reservation!");
+            alert.showAndWait();
+
+        } else {
+
+            for (Room room: hotel.theRoomsList) {
+
+                if (room.getId() == selectRoomId && room.getStatus() == StatusRoom.RESERVATION) {
+
+
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    alert.setHeaderText("Do you want to check in for room id: " + selectRoomId + "!");
+                    Optional<ButtonType> result = alert.showAndWait();
+
+                    if (result.get() == ButtonType.OK) {
+
+                        room.goCheckIn();
+                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0));
+                        table_rooms.refresh();
+
+                    }
+
+                    return;
+
+                }
+
+            }
+
+        }
+
     }
 
     @FXML
     private void pressCheckOut(ActionEvent event) {
+
+        if (selectRoomId == 0) {
+
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Need select free room for create reservation!");
+            alert.showAndWait();
+
+        } else {
+
+            for (Room room: hotel.theRoomsList) {
+
+                if (room.getId() == selectRoomId && room.getStatus() == StatusRoom.BUSY) {
+
+
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    alert.setHeaderText("Do you want to check out for room id: " + selectRoomId + "!");
+                    Optional<ButtonType> result = alert.showAndWait();
+
+                    if (result.get() == ButtonType.OK) {
+
+                        room.goCheckOut();
+                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0));
+                        table_rooms.refresh();
+
+                    }
+
+                    return;
+
+                }
+
+            }
+
+        }
 
     }
 
@@ -103,6 +162,39 @@ public class ReceptionistHomeController {
 
     @FXML
     private void pressCancelReservation(ActionEvent event) {
+
+        if (selectRoomId == 0) {
+
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Need select free room for create reservation!");
+            alert.showAndWait();
+
+        } else {
+
+            for (Room room: hotel.theRoomsList) {
+
+                if (room.getId() == selectRoomId && room.getStatus() == StatusRoom.RESERVATION) {
+
+
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    alert.setHeaderText("Do you want to cancel reservation for room id: " + selectRoomId + "!");
+                    Optional<ButtonType> result = alert.showAndWait();
+
+                    if (result.get() == ButtonType.OK) {
+
+                        room.goCancelReservation();
+                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0));
+                        table_rooms.refresh();
+
+                    }
+
+                    return;
+
+                }
+
+            }
+
+        }
 
     }
 

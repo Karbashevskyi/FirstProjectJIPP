@@ -18,25 +18,45 @@ public class Hotel {
 
     }
 
-    public ObservableList getObservableRoomListWithSelectedStatus(StatusRoom status) {
+    public ObservableList getObservableRoomListWithSelectedStatus(StatusRoom status, int client_id) {
 
         List<Room> localList = new ArrayList();
 
         for (Room room: theRoomsList) {
 
-            if (status == null) {
+            if (client_id == 0) {
 
-                localList.add(room);
+                if (status == null) {
 
-            }
+                    localList.add(room);
 
-            if (status != null && room.getStatus() == status) {
+                }
 
-                localList.add(room);
+                if (status != null && room.getStatus() == status) {
+
+                    localList.add(room);
+
+                }
+
+            } else if (client_id == room.getClient_id()) {
+
+                if (status == null) {
+
+                    localList.add(room);
+
+                }
+
+                if (status != null && room.getStatus() == status) {
+
+                    localList.add(room);
+
+                }
 
             }
 
         }
+
+        System.out.println(localList);
 
         ObservableList data = FXCollections.observableList(localList);
 
@@ -456,6 +476,48 @@ public class Hotel {
     public void addNewClient(int id, String full_name, String passport, String phone, String email, String password) {
 
         theClientsList.add(new Client(id, full_name, passport, phone, email, password));
+
+    }
+
+    public int getCountAllRoomsWithStatus(StatusRoom status, int client_id) {
+
+        int count = 0;
+
+        if (checkTheRoomsList()) {
+
+            for (Room room: theRoomsList) {
+
+                if (client_id == 0) {
+
+                    if (status == null) {
+
+                        count += 1;
+
+                    } else if (room.getStatus() == status) {
+
+                        count += 1;
+
+                    }
+
+                } else if (client_id == room.getClient_id()) {
+
+                    if (status == null) {
+
+                        count += 1;
+
+                    } else if (room.getStatus() == status) {
+
+                        count += 1;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        return count;
 
     }
 

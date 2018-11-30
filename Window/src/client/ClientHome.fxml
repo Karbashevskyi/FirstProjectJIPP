@@ -12,7 +12,7 @@
    <children>
       <TabPane fx:id="tab_menu" layoutX="8.0" layoutY="37.0" prefHeight="355.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
         <tabs>
-          <Tab text="All free rooms">
+          <Tab fx:id="tp_all_free_rooms" text="All free rooms">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -22,7 +22,7 @@
                      </children></AnchorPane>
             </content>
           </Tab>
-          <Tab text="My reservations">
+          <Tab fx:id="tp_reservation" text="My reservations">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>

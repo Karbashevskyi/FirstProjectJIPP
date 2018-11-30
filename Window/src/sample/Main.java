@@ -18,7 +18,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
 
         Parent root = fxmlLoader.load();
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Hotel - ID-2/3");
 
         Controller login = fxmlLoader.getController();
 

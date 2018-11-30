@@ -3,16 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="91d413ac-230a-4a28-acde-fc10a558e531" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/cleaners/CleanersHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/cleaners/CleanersHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/cleaners/CleanersHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/cleaners/CleanersHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/client/ClientHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/client/ClientHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/core/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/core/Hotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/core/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/core/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/director/DirectorHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/director/DirectorHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/director/DirectorHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/director/DirectorHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cleaners/CleanersHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleaners/CleanersHome.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cleaners/CleanersHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleaners/CleanersHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ClientHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientHome.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientHomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Hotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/director/DirectorHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/director/DirectorHome.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/director/DirectorHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/director/DirectorHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,56 +35,67 @@
     <session id="449814745">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="11" />
-          <entry key="java" value="28" />
+          <entry key="fxml" value="14" />
+          <entry key="java" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
-          <entry key="XML" value="11" />
+          <entry key="JAVA" value="31" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="56" />
-          <entry key="java" value="3671" />
-          <entry key="txt" value="33" />
+          <entry key="fxml" value="63" />
+          <entry key="java" value="4780" />
+          <entry key="txt" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3671" />
-          <entry key="PLAIN_TEXT" value="33" />
-          <entry key="XML" value="56" />
+          <entry key="JAVA" value="4780" />
+          <entry key="PLAIN_TEXT" value="75" />
+          <entry key="XML" value="63" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/ClientHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="143" selection-end-column="5" />
+            <state relative-caret-position="672">
+              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/ClientHome.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+            <state relative-caret-position="502">
+              <caret line="193" column="5" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,33 +103,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="136" column="34" lean-forward="true" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+            <state relative-caret-position="454">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Role.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -116,29 +118,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="394">
+              <caret line="63" column="86" selection-start-line="63" selection-start-column="86" selection-end-line="63" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -146,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/director/DirectorHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="2085">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,15 +140,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/director/DirectorHome.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cleaners/CleanersHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="103" column="118" selection-start-line="103" selection-start-column="118" selection-end-line="103" selection-end-column="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cleaners/CleanersHome.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="126" selection-start-line="16" selection-start-column="126" selection-end-line="16" selection-end-column="126" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -195,19 +211,19 @@
         <option value="$PROJECT_DIR$/src/client/Home.java" />
         <option value="$PROJECT_DIR$/src/core/Role.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/client/ClientHome.fxml" />
         <option value="$PROJECT_DIR$/src/core/Recepcionist.java" />
         <option value="$PROJECT_DIR$/src/core/Receptionist.java" />
-        <option value="$PROJECT_DIR$/src/director/DirectorHome.fxml" />
+        <option value="$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/core/Room.java" />
         <option value="$PROJECT_DIR$/src/cleaners/CleanersHome.fxml" />
+        <option value="$PROJECT_DIR$/src/director/DirectorHome.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/client/ClientHome.fxml" />
+        <option value="$PROJECT_DIR$/src/core/Hotel.java" />
         <option value="$PROJECT_DIR$/src/director/DirectorHomeController.java" />
         <option value="$PROJECT_DIR$/src/cleaners/CleanersHomeController.java" />
-        <option value="$PROJECT_DIR$/src/core/Room.java" />
-        <option value="$PROJECT_DIR$/src/core/Hotel.java" />
-        <option value="$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml" />
         <option value="$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/client/ClientHomeController.java" />
       </list>
     </option>
@@ -280,14 +296,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543439663864" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543486479964" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -324,7 +340,8 @@
       <option name="presentableId" value="Default" />
       <updated>1543188195858</updated>
       <workItem from="1543188201385" duration="11517000" />
-      <workItem from="1543434314434" duration="5299000" />
+      <workItem from="1543434314434" duration="5668000" />
+      <workItem from="1543482528618" duration="3860000" />
     </task>
     <task id="LOCAL-00001" summary="H: Need fix small problem.">
       <created>1543275403165</created>
@@ -333,22 +350,28 @@
       <option name="project" value="LOCAL" />
       <updated>1543275403165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="H: Small fixes, need add function for 3 role!.">
+      <created>1543439690838</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543439690838</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16816000" />
+    <option name="totallyTimeSpent" value="21045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20457797" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2074392" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -356,7 +379,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -381,7 +404,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="H: Need fix small problem." />
-    <option name="LAST_COMMIT_MESSAGE" value="H: Need fix small problem." />
+    <MESSAGE value="H: Small fixes, need add function for 3 role!." />
+    <option name="LAST_COMMIT_MESSAGE" value="H: Small fixes, need add function for 3 role!." />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
@@ -438,20 +462,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ClientHome.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="184" selection-start-line="10" selection-start-column="184" selection-end-line="10" selection-end-column="184" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../console/src/main/Receptionist.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -474,26 +490,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/director/DirectorHome.fxml">
+    <entry file="file://$PROJECT_DIR$/src/core/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="25" selection-end-column="86" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cleaners/CleanersHome.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="126" selection-start-line="16" selection-start-column="126" selection-end-line="16" selection-end-column="126" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/director/DirectorHome.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cleaners/CleanersHome.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="390">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ClientHome.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="193" column="5" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -502,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/director/DirectorHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="2085">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -512,67 +575,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cleaners/CleanersHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="180">
+          <caret line="103" column="118" selection-start-line="103" selection-start-column="118" selection-end-line="103" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="136" column="34" lean-forward="true" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+        <state relative-caret-position="394">
+          <caret line="63" column="86" selection-start-line="63" selection-start-column="86" selection-end-line="63" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -581,8 +595,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/ClientHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="143" selection-end-column="5" />
+        <state relative-caret-position="672">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

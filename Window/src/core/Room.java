@@ -48,6 +48,7 @@ public class Room extends Hotel {
 
             status = FREE;
             client_id = 0;
+            client_full_name = null;
             return true;
 
         }

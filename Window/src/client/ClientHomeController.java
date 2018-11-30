@@ -34,8 +34,6 @@ import java.util.ResourceBundle;
 
 public class ClientHomeController implements Initializable {
 
-//    private int client_id;
-//    private String full_name;
     private int selectRoomId = 0;
     private int selectedRoomIdForCancelReservation = 0;
 
@@ -45,6 +43,8 @@ public class ClientHomeController implements Initializable {
     @FXML private TableView table_reservations;
     @FXML private TabPane tab_menu;
     @FXML private Label lb_selected_room_id_for_cancel_reservation;
+    @FXML private Tab tp_reservation;
+    @FXML private Tab tp_all_free_rooms;
     private Hotel hotel;
     private Client client;
 
@@ -55,23 +55,39 @@ public class ClientHomeController implements Initializable {
 
             lb_client_id.setText("" + client.getFullName());
 
+            getCountsInTitleTabPanel();
             getInitTableRooms();
             getInitTableReservations();
 
             tab_menu.getSelectionModel().selectedItemProperty().addListener((ov, oldTab, newTab) -> {
+
                 switch (newTab.getText()) {
+
                     case "All free rooms":
                         System.out.println("Refresh table on: All free rooms");
-                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE));
+                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE, 0));
                         break;
                     case "My reservations":
                         System.out.println("Refresh table on: My reservations");
-                        table_reservations.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.RESERVATION));
+                        table_reservations.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.RESERVATION, client.getId()));
                         break;
+
                 }
+
             });
 
         });
+
+    }
+
+    private void getCountsInTitleTabPanel() {
+
+        if (hotel.checkTheRoomsList()) {
+
+            tp_reservation.setText("All free rooms (" + hotel.getCountAllRoomsWithStatus(StatusRoom.RESERVATION, client.getId()) + ")");
+            tp_all_free_rooms.setText("My reservations (" + hotel.getCountAllRoomsWithStatus(StatusRoom.FREE, 0) + ")");
+
+        }
 
     }
 
@@ -87,7 +103,7 @@ public class ClientHomeController implements Initializable {
         id.setCellValueFactory(new PropertyValueFactory<Room, String>("id"));
         status.setCellValueFactory(new PropertyValueFactory<Room, String>("status"));
 
-        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE));
+        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE, 0));
 
         table_rooms.getSelectionModel().selectedItemProperty().addListener((ChangeListener<Room>) (observable, oldValue, newValue) -> {
 
@@ -115,15 +131,17 @@ public class ClientHomeController implements Initializable {
         id.setCellValueFactory(new PropertyValueFactory<Room, String>("id"));
         status.setCellValueFactory(new PropertyValueFactory<Room, String>("status"));
 
+        table_reservations.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.RESERVATION, client.getId()));
+
         table_reservations.getSelectionModel().selectedItemProperty().addListener((ChangeListener<Room>) (observable, oldValue, newValue) -> {
 
             if (newValue == null) {
-                lb_selected_room_id_for_cancel_reservation.setText("Select id: ");
+                lb_selected_room_id.setText("Select id: ");
                 return;
             }
 
-            selectedRoomIdForCancelReservation = newValue.getId();
-            lb_selected_room_id_for_cancel_reservation.setText("Selected id: " + newValue.getId());
+            selectRoomId = newValue.getId();
+            lb_selected_room_id.setText("Selected id: " + newValue.getId());
 
         });
 
@@ -160,16 +178,14 @@ public class ClientHomeController implements Initializable {
 
 
                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-//                    alert.setHeaderText("Great, you make reservation for room id: " + selectRoomId + "!");
                     alert.setHeaderText("Do you sure make reservation for room id: " + selectRoomId + "!");
-//                    alert.showAndWait();
                     Optional<ButtonType> result = alert.showAndWait();
 
                     if (result.get() == ButtonType.OK) {
 
                         room.goReservation(client.getId(), client.getFullName());
-                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE));
-//                        table_rooms.refresh();
+                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.FREE, 0));
+                        getCountsInTitleTabPanel();
 
                     }
 
@@ -206,7 +222,8 @@ public class ClientHomeController implements Initializable {
                     if (result.get() == ButtonType.OK) {
 
                         room.goCancelReservation();
-                        table_reservations.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.RESERVATION));
+                        table_reservations.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.RESERVATION, client.getId()));
+                        getCountsInTitleTabPanel();
 
                     }
 
