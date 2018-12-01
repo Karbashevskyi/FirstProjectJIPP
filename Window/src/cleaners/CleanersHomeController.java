@@ -61,7 +61,7 @@ public class CleanersHomeController {
             tb_status.setCellValueFactory(new PropertyValueFactory<Room, StatusRoom>("status"));
             tb_client_full_name.setCellValueFactory(new PropertyValueFactory<Room, String>("client_full_name"));
 
-            table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.NEED_CLEANING, 0));
+            table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.NEED_CLEANING, 0, false));
 
             table_rooms.getSelectionModel().selectedItemProperty().addListener((ChangeListener<Room>) (observable, oldValue, newValue) -> {
 
@@ -101,7 +101,6 @@ public class CleanersHomeController {
                     if (result.get() == ButtonType.OK) {
 
                         room.goCleaning();
-                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(StatusRoom.NEED_CLEANING, 0));
                         table_rooms.refresh();
 
                     }

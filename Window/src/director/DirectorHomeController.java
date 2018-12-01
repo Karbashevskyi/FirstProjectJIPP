@@ -53,10 +53,12 @@ public class DirectorHomeController {
 
             tb_status.setMinWidth(100);
 
+            System.out.println(hotel);
+
             tb_id.setCellValueFactory(new PropertyValueFactory<Room, Integer>("id"));
             tb_status.setCellValueFactory(new PropertyValueFactory<Room, StatusRoom>("status"));
 
-            table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0));
+            table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0, true));
 
             table_rooms.getSelectionModel().selectedItemProperty().addListener((ChangeListener<Room>) (observable, oldValue, newValue) -> {
 
@@ -101,7 +103,6 @@ public class DirectorHomeController {
                     if (result.get() == ButtonType.OK) {
 
                         room.goLocked();
-                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0));
                         table_rooms.refresh();
 
                     }
@@ -137,7 +138,6 @@ public class DirectorHomeController {
                     if (result.get() == ButtonType.OK) {
 
                         room.goCancelLocked();
-                        table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0));
                         table_rooms.refresh();
 
                     }

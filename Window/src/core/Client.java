@@ -59,7 +59,7 @@ public class Client extends Hotel {
     @Override
     public String toString() {
 
-        return getFullName();
+        return full_name;
 
     }
 }

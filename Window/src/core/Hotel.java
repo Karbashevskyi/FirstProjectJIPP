@@ -18,11 +18,17 @@ public class Hotel {
 
     }
 
-    public ObservableList getObservableRoomListWithSelectedStatus(StatusRoom status, int client_id) {
+    public ObservableList getObservableRoomListWithSelectedStatus(StatusRoom status, int client_id, boolean with_locked) {
 
         List<Room> localList = new ArrayList();
 
         for (Room room: theRoomsList) {
+
+            if (!with_locked && room.getStatus() == StatusRoom.LOCKED) {
+
+                continue;
+
+            }
 
             if (client_id == 0) {
 
