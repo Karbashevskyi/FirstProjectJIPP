@@ -3,15 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="91d413ac-230a-4a28-acde-fc10a558e531" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleaners/CleanersHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleaners/CleanersHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ClientHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ClientHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/cleaners/CleanersHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/cleaners/CleanersHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/client/ClientHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/client/ClientHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/client/ClientHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/client/ClientHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/core/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/core/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/core/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/core/Hotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/director/DirectorHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/director/DirectorHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/director/DirectorHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/director/DirectorHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Window/receptionist/ReceptionistHomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/director/DirectorHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/director/DirectorHome.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/director/DirectorHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/director/DirectorHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/receptionist/ReceptionistHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,14 +51,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="81" />
-          <entry key="java" value="5664" />
-          <entry key="txt" value="125" />
+          <entry key="java" value="5796" />
+          <entry key="txt" value="243" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5664" />
-          <entry key="PLAIN_TEXT" value="125" />
+          <entry key="JAVA" value="5796" />
+          <entry key="PLAIN_TEXT" value="243" />
           <entry key="XML" value="81" />
         </counts>
       </usages-collector>
@@ -91,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="453" column="19" selection-start-line="453" selection-start-column="19" selection-end-line="453" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +162,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/director/DirectorHomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="96" column="92" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+            <state relative-caret-position="303">
+              <caret line="93" column="12" lean-forward="true" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,8 +213,8 @@
         <option value="$PROJECT_DIR$/src/receptionist/ReceptionistHomeController.java" />
         <option value="$PROJECT_DIR$/src/client/ClientHomeController.java" />
         <option value="$PROJECT_DIR$/src/cleaners/CleanersHomeController.java" />
-        <option value="$PROJECT_DIR$/src/core/Hotel.java" />
         <option value="$PROJECT_DIR$/src/director/DirectorHome.fxml" />
+        <option value="$PROJECT_DIR$/src/core/Hotel.java" />
         <option value="$PROJECT_DIR$/src/director/DirectorHomeController.java" />
       </list>
     </option>
@@ -292,7 +294,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543697929256" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543763904788" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -332,7 +334,7 @@
       <workItem from="1543434314434" duration="5668000" />
       <workItem from="1543482528618" duration="3860000" />
       <workItem from="1543595575596" duration="277000" />
-      <workItem from="1543688758824" duration="4237000" />
+      <workItem from="1543688758824" duration="4886000" />
     </task>
     <task id="LOCAL-00001" summary="H: Need fix small problem.">
       <created>1543275403165</created>
@@ -355,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543689021424</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="H: this last version have all function need all pages!&#10;Need check all program and we can show this program teacher :D">
+      <created>1543698015156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543698015156</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25559000" />
+    <option name="totallyTimeSpent" value="26208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -378,7 +387,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -405,7 +414,8 @@
     <MESSAGE value="H: Need fix small problem." />
     <MESSAGE value="H: Small fixes, need add function for 3 role!." />
     <MESSAGE value="H: Added workspace from idea." />
-    <option name="LAST_COMMIT_MESSAGE" value="H: Added workspace from idea." />
+    <MESSAGE value="H: this last version have all function need all pages!&#10;Need check all program and we can show this program teacher :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="H: this last version have all function need all pages!&#10;Need check all program and we can show this program teacher :D" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
@@ -600,16 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/director/DirectorHome.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
@@ -618,10 +618,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="453" column="19" selection-start-line="453" selection-start-column="19" selection-end-line="453" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/director/DirectorHomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="96" column="92" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+        <state relative-caret-position="303">
+          <caret line="93" column="12" lean-forward="true" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

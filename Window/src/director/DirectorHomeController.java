@@ -78,7 +78,22 @@ public class DirectorHomeController {
 
     @FXML private void pressBtnAddRoom (ActionEvent event) {
 
+        int new_room_id = hotel.getLastRoomId() + 1;
 
+        if (hotel.addNewRoom(new_room_id)) {
+
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setHeaderText("You added new room with id: " + new_room_id + "!");
+            alert.showAndWait();
+            table_rooms.setItems(hotel.getObservableRoomListWithSelectedStatus(null, 0, true));
+
+        } else {
+
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("You not added new room with id: " + new_room_id + "!");
+            alert.showAndWait();
+
+        }
 
     }
 

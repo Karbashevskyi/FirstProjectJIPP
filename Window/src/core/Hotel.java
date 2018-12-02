@@ -70,7 +70,7 @@ public class Hotel {
 
     }
 
-    protected int getLastRoomId() {
+    public int getLastRoomId() {
 
         if (checkTheRoomsList()) {
 

@@ -3,37 +3,15 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane cache="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientHomeController">
    <children>
-      <TabPane fx:id="tab_menu" layoutX="8.0" layoutY="37.0" prefHeight="355.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
-        <tabs>
-          <Tab fx:id="tp_all_free_rooms" text="All free rooms">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <TableView fx:id="table_rooms" layoutY="44.0" prefHeight="282.0" prefWidth="607.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
-                        <Button fx:id="btn_reservation" layoutX="458.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressBtnGoReservation" text="+ Add new reservation" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Label fx:id="lb_selected_room_id" layoutX="14.0" layoutY="14.0" text="Selected id: " />
-                     </children></AnchorPane>
-            </content>
-          </Tab>
-          <Tab fx:id="tp_reservation" text="My reservations">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Button fx:id="btn_cancel_reservation" layoutX="453.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressBtnCancelReservation" text="- Cancel reservation" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <TableView fx:id="table_reservations" layoutY="55.0" prefHeight="267.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
-                        <Label fx:id="lb_selected_room_id_for_cancel_reservation" layoutX="14.0" layoutY="15.0" text="Selected id:" />
-                     </children></AnchorPane>
-            </content>
-          </Tab>
-        </tabs>
-      </TabPane>
+      <TableView fx:id="table_rooms" prefHeight="282.0" prefWidth="607.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0" />
+      <Button fx:id="btn_reservation" layoutX="282.0" layoutY="45.0" mnemonicParsing="false" onAction="#pressBtnGoReservation" text="+ Add new reservation" AnchorPane.rightAnchor="161.0" AnchorPane.topAnchor="45.0" />
+      <Label fx:id="lb_selected_room_id" layoutX="10.0" layoutY="50.0" text="Selected room id: " />
+      <Button fx:id="btn_cancel_reservation" layoutX="447.0" layoutY="45.0" mnemonicParsing="false" onAction="#pressBtnCancelReservation" text="- Cancel reservation" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="45.0" />
       <Label fx:id="lb_client_id" layoutX="16.0" layoutY="15.0" prefHeight="25.0" prefWidth="168.0" text="Full name" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
       <Button fx:id="btn_logout" layoutX="540.0" layoutY="15.0" mnemonicParsing="false" onAction="#pressBtnLogout" text="Logout" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
    </children>
