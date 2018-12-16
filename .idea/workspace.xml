@@ -7,7 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668cd254-ee52-49fb-8c51-685bd729a09a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Window/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Window/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Window/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Window/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/cleaners/CleanersHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/cleaners/CleanersHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/client/ClientHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/client/ClientHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/core/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/core/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/core/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/core/Hotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/core/Receptionist.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/core/Receptionist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/core/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/core/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/core/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/core/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/core/StatusRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/core/StatusRoom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/director/DirectorHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/director/DirectorHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/receptionist/ReceptionistHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/receptionist/ReceptionistHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/out/production/Window/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Window/out/production/Window/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Window/src/sample/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="E:\Projects\WSTI\JIPP\FirstProjectJIPP\.idea\shelf/" />
@@ -38,9 +55,9 @@
     <session id="307234750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
@@ -48,34 +65,34 @@
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
           <entry key="fxml" value="1" />
-          <entry key="java" value="35" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="36" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="36" />
           <entry key="Manifest" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="21" />
-          <entry key="java" value="307" />
+          <entry key="java" value="392" />
           <entry key="txt" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="307" />
+          <entry key="JAVA" value="392" />
           <entry key="PLAIN_TEXT" value="54" />
           <entry key="XML" value="21" />
         </counts>
@@ -87,21 +104,43 @@
         </counts>
       </usages-collector>
     </session>
-    <session id="-970064429">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="FirstProjectJIPP" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Window/src/core/Room.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Window/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,14 +152,16 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.jar</find>
+      <find>FirstProjectJIPP</find>
+      <find>class</find>
+      <find>path</find>
+      <find>$PROJECT_DIR$</find>
     </findStrings>
     <dirStrings>
       <dir>E:\Projects\WSTI\JIPP\FirstProjectJIPP</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -136,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/Room.java" />
         <option value="$PROJECT_DIR$/src/main/Hotel.java" />
         <option value="$PROJECT_DIR$/src/main/index.fxml" />
+        <option value="$PROJECT_DIR$/Window/src/sample/Main.java" />
       </list>
     </option>
   </component>
@@ -151,7 +193,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="25" />
     <option name="width" value="1400" />
@@ -163,6 +205,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,23 +214,175 @@
               <item name="FirstProjectJIPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstProjectJIPP" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FirstProjectJIPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProjectJIPP" type="462c0819:PsiDirectoryNode" />
+              <item name="Window" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProjectJIPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProjectJIPP" type="462c0819:PsiDirectoryNode" />
+              <item name="Window" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProjectJIPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProjectJIPP" type="462c0819:PsiDirectoryNode" />
+              <item name="Window" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProjectJIPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProjectJIPP" type="462c0819:PsiDirectoryNode" />
+              <item name="Window" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstProjectJIPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstProjectJIPP" type="462c0819:PsiDirectoryNode" />
+              <item name="Window" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543173857604" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543689034887" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/cleaners/CleanersHomeController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/client/ClientHome.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/client/ClientHomeController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/core/Client.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/core/Hotel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/director/DirectorHome.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/director/DirectorHomeController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/receptionist/ReceptionistHome.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/out/production/Window/receptionist/ReceptionistHomeController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/src/core/Hotel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Window/src/director/DirectorHomeController.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -202,9 +398,9 @@
   </component>
   <component name="RunManager">
     <configuration name="Run" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="FirstProjectJIPP" />
-      <shortenClasspath name="MANIFEST" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Window" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,7 +427,8 @@
       <workItem from="1542627964617" duration="276000" />
       <workItem from="1543097573682" duration="910000" />
       <workItem from="1543153379800" duration="1341000" />
-      <workItem from="1543275448689" duration="61000" />
+      <workItem from="1543689298028" duration="84000" />
+      <workItem from="1544972927858" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="H: Small fixes.">
       <created>1539817846181</created>
@@ -251,7 +448,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8282000" />
+    <option name="totallyTimeSpent" value="9229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,15 +460,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.54937166" visible="true" weight="0.2081545" />
-      <window_info id="Structure" order="1" sideWeight="0.45062837" side_tool="true" visible="true" weight="0.2081545" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5418455" visible="true" weight="0.2228145" />
+      <window_info id="Structure" order="1" sideWeight="0.4581545" side_tool="true" visible="true" weight="0.2228145" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008" side_tool="true" weight="0.25266525" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32939914" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
@@ -282,9 +480,11 @@
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32939914" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32939914" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32939914" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32939914" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Flutter Inspector" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -312,73 +512,43 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
-  <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
-    <option name="sizePresets">
-      <list>
-        <SizePreset>
-          <option name="caption" value="Phone" />
-          <option name="height" value="568" />
-          <option name="width" value="320" />
-        </SizePreset>
-        <SizePreset>
-          <option name="caption" value="Tablet" />
-          <option name="height" value="1024" />
-          <option name="width" value="768" />
-        </SizePreset>
-        <SizePreset>
-          <option name="caption" value="Desktop" />
-          <option name="height" value="900" />
-          <option name="width" value="1440" />
-        </SizePreset>
-      </list>
-    </option>
-  </component>
-  <component name="designer2.settings">
-    <option name="autodetectServerAddress" value="true" />
-    <option name="serverIp" value="localhost" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/StatusRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/Room.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/StatusRoom.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/Hotel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/Client.java" />
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/src/main/index.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+        <state relative-caret-position="192">
+          <caret line="417" column="28" selection-start-line="417" selection-start-column="28" selection-end-line="417" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Window/src/core/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Window/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
